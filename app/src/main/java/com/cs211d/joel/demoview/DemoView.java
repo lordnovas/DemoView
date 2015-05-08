@@ -16,6 +16,7 @@ public class DemoView extends View
     {
         super(context);
         p.setColor(Color.YELLOW);
+        p.setAntiAlias(true);
     }
 
     public void onDraw(Canvas c)
@@ -28,7 +29,9 @@ public class DemoView extends View
         c.drawLine(500, 33, 20, 20, p);
         c.drawLine(20, 88, 30, 20, p);
         c.drawRect(rect, blue);
-        c.drawCircle(c.getWidth() / 2, 0, c.getHeight()/2,p);
+        c.drawCircle(c.getWidth()/2,c.getHeight()/2,500,p);
     }
+
+
 
 }
